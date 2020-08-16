@@ -1,6 +1,7 @@
 :root {
   --google-grey: #dfe1e5;
   --google-icon: #9aa0a6;
+  font-family: "Roboto";
 }
 .container {
   margin: 3rem;
@@ -193,7 +194,7 @@
   text-align: center;
   padding: 10px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 13px;
 }
 
 .topnav.left {
