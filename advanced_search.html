@@ -2,11 +2,8 @@
 <html lang="en">
 
 <head>
-    <title>Google Search</title>
+    <title>Google Advanced Search</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-
 </head>
 
 
@@ -19,30 +16,44 @@
     </nav>
 
     <div class="container">
-        <div class="flex-grid">
-            <div class="col">
-                <img class="logo" src="./static/images/google_logo.png">
-                <div class="image-text-container">
-                </div>
-            </div>
+        <div class="advanced-header">
+            Advanced Search
         </div>
-        <div class="flex-grid">
-            <div class="col">
-                <form action="https://google.com/search" method="get">
-                    <div class="bar">
-                        <input class="searchbar" type="text" name="q" title="Search">
+        <div class="advanced-hr"></div>
+        <div class="advanced-text">
+            Find pages with...
+        </div>
 
+
+        <div class="advanced-container">
+            <!-- as_q=aaa&as_epq=bbb&as_oq=ccc&as_eq=ddd -->
+            <form class="advanced-form" action="https://google.com/search" method="get">
+                <div class="grid-flex">
+                    <div class="col">
+                        <span>all these words</span>
+                        <input class="advanced-input" name="as_q" type="text">
                     </div>
-                    <div class="flex-grid">
-                        <div class="col m-3">
-                            <button class="button" type="submit" value="Google Search">Google Search</button>
-                            <button class="button" type=" submit" value="I'm Feeling Lucky">I'm Feeling Lucky</button>
-                        </div>
+                    <div class="col">
+                        <span>all these words</span>
+                        <input class="advanced-input" name="as_epq" type="text">
                     </div>
-                </form>
-            </div>
+                    <div class="col">
+                        <span>all these words</span>
+                        <input class="advanced-input" name="as_oq" type="text">
+                    </div>
+                    <div class="col">
+                        <span>all these words</span>
+                        <input class="advanced-input" name="as_eq" type="text">
+                    </div>
+
+                </div>
+                <div class="flex-grid">
+                    <input class="advanced-button" type="submit" value="Advanced Search">
+                </div>
         </div>
+        </form>
     </div>
+
 </body>
 
 </html>
